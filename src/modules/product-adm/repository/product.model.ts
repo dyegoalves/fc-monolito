@@ -21,6 +21,10 @@ export class ProductModel extends Model {
   @Column({ allowNull: false })
   stock: number;
 
+  // Mesma tabela lida pelo store-catalog (monólito: um banco só)
+  @Column({ allowNull: true })
+  salesPrice: number;
+
   @Column({ allowNull: false })
   createdAt: Date;
 

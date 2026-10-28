@@ -17,4 +17,17 @@ export default class ProductModel extends Model {
 
   @Column({ allowNull: false })
   salesPrice: number;
+
+  // Colunas do product-adm: mesma tabela "products" no banco do monólito
+  @Column({ allowNull: true })
+  purchasePrice: number;
+
+  @Column({ allowNull: true })
+  stock: number;
+
+  @Column({ allowNull: true })
+  createdAt: Date;
+
+  @Column({ allowNull: true })
+  updatedAt: Date;
 }

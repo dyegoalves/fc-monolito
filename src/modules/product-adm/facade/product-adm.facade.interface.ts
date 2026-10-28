@@ -4,6 +4,7 @@ export interface AddProductFacadeInputDto {
   description: string;
   purchasePrice: number;
   stock: number;
+  salesPrice?: number;
 }
 
 export interface CheckStockFacadeInputDto {

@@ -17,6 +17,7 @@ export default class AddProductUseCase {
       description: input.description,
       purchasePrice: input.purchasePrice,
       stock: input.stock,
+      salesPrice: input.salesPrice,
     };
 
     const product = new Product(props);
